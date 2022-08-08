@@ -14,7 +14,7 @@ const Application = (props) => {
 
   const reset = () => {
     console.log("reset");
-    // your code here
+    setName("");
   };
 
   return (
