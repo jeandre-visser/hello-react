@@ -26,7 +26,7 @@ const Application = (props) => {
       </input>
 
       <button onClick={reset} >Reset</button>
-      <h1>Hello {name}</h1>
+      {name && <h1>Hello {name}</h1>}
     </main>
   );
 };
