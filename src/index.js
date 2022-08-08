@@ -10,7 +10,7 @@ const Button = (props) => {
 
 const Application = (props) => {
 
-  // your code here
+  const [name, setName] = useState('Jeandre');
 
   const reset = () => {
     console.log("reset");
@@ -19,8 +19,9 @@ const Application = (props) => {
 
   return (
     <main>
+      <input placeholder='TYPE YOUR NAME' ></input>
       <button onClick={reset} >Reset</button>
-      <h1>Hello React</h1>
+      <h1>Hello {name}</h1>
     </main>
   );
 };
